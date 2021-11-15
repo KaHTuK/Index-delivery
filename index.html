@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Индекс.Доставка еды</title>
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header container">
+      <div class="header_logo">
+        <img src="img/logo.jpg" alt="Логотип" />
+        <p class="header_logo-text">Индекс еда</p>
+      </div>
+      <form action="#" class="header_search">
+        <input class="header_search-input" type="search" placeholder="Блюда" />
+        <button class="header_search-btn">
+          <img
+            class="header_search-icon"
+            src="img/search-icon.png"
+            alt="search-icon"
+          />
+        </button>
+      </form>
+      <div class="header_login">
+        <button class="header_login-btn">Войти</button>
+        <a href="#" class="shopping_cart">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_5:2)">
+              <path
+                d="M22.713 4.077C22.4317 3.73944 22.0796 3.46795 21.6815 3.28182C21.2835 3.09568 20.8494 2.99946 20.41 3H4.242L4.2 2.649C4.11405 1.91942 3.76338 1.24673 3.21449 0.758478C2.6656 0.270223 1.95663 0.000341793 1.222 0L1 0C0.734784 0 0.48043 0.105357 0.292893 0.292893C0.105357 0.48043 0 0.734784 0 1C0 1.26522 0.105357 1.51957 0.292893 1.70711C0.48043 1.89464 0.734784 2 1 2H1.222C1.46693 2.00003 1.70334 2.08996 1.88637 2.25272C2.06941 2.41547 2.18634 2.63975 2.215 2.883L3.591 14.583C3.73385 15.7998 4.31848 16.9218 5.23391 17.736C6.14934 18.5502 7.33185 19 8.557 19H19C19.2652 19 19.5196 18.8946 19.7071 18.7071C19.8946 18.5196 20 18.2652 20 18C20 17.7348 19.8946 17.4804 19.7071 17.2929C19.5196 17.1054 19.2652 17 19 17H8.557C7.93806 16.9983 7.3348 16.8051 6.82994 16.4471C6.32507 16.089 5.94331 15.5835 5.737 15H17.657C18.8293 15.0001 19.9643 14.5882 20.8638 13.8364C21.7633 13.0846 22.37 12.0407 22.578 10.887L23.363 6.533C23.4414 6.10101 23.4237 5.65707 23.3114 5.23264C23.1991 4.80821 22.9948 4.41368 22.713 4.077V4.077ZM21.4 6.178L20.614 10.532C20.4891 11.225 20.1245 11.852 19.5839 12.3032C19.0433 12.7544 18.3612 13.0011 17.657 13H5.419L4.478 5H20.41C20.5569 4.99912 20.7022 5.03062 20.8355 5.09226C20.9689 5.15389 21.087 5.24415 21.1815 5.35661C21.276 5.46907 21.3446 5.60097 21.3824 5.74294C21.4201 5.8849 21.4262 6.03344 21.4 6.178V6.178Z"
+                fill="white"
+              />
+              <path
+                d="M7.00012 24.0006C8.10469 24.0006 9.00011 23.1052 9.00011 22.0006C9.00011 20.8961 8.10469 20.0006 7.00012 20.0006C5.89555 20.0006 5.00012 20.8961 5.00012 22.0006C5.00012 23.1052 5.89555 24.0006 7.00012 24.0006Z"
+                fill="white"
+              />
+              <path
+                d="M17 24.0006C18.1046 24.0006 19 23.1052 19 22.0006C19 20.8961 18.1046 20.0006 17 20.0006C15.8954 20.0006 15 20.8961 15 22.0006C15 23.1052 15.8954 24.0006 17 24.0006Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_5:2">
+                <rect width="24" height="24" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <span class="shopping_counter">12</span>
+        </a>
+      </div>
+    </header>
+
+    <section class="main container">
+      <div class="main_slider">
+        <div class="main_slide main_slide-1">
+          <div class="main_slide-content">
+            <h3 class="main_slide-description">Неделя летних овощей</h3>
+            <p class="main_slide-text">
+              Специальная овощная корзина. Новые продукты, специальные цены,
+              скидки!
+            </p>
+            <button class="main_slide-btn">Заказать со скидкой</button>
+          </div>
+        </div>
+        <div class="main_slide main_slide-2">
+          <div class="main_slide-content">
+            <h3 class="main_slide-description">Неделя осенних овощей</h3>
+            <p class="main_slide-text">
+              Специальная овощная корзина. Новые продукты, специальные цены,
+              скидки!
+            </p>
+            <button class="main_slide-btn">Заказать со скидкой</button>
+          </div>
+        </div>
+        <div class="main_slide main_slide-3">
+          <div class="main_slide-content">
+            <h3 class="main_slide-description">Витаминная неделя</h3>
+            <p class="main_slide-text">
+              Специальная овощная корзина. Новые продукты, специальные цены,
+              скидки!
+            </p>
+            <button class="main_slide-btn">Заказать со скидкой</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="offers">
+      <div class="offers_inner container">
+        <div class="offers_card1">
+          <img class="offers_card-image" src="img/card1.png" alt="" />
+          <h4 class="offers_card-description">Сладкая корзина</h4>
+          <p class="offers_card-text">
+            Произвольный выбор продуктов по Вашему желанию.
+          </p>
+          <p class="offers_card-price">от 1300 Р</p>
+          <p class="offers_card-delivery">Стоимость доставки от 200 Р</p>
+          <button class="offers_card-btn">Собрать корзину</button>
+        </div>
+        <div class="offers_card2">
+          <img class="offers_card-image" src="img/card2.png" alt="" />
+          <h4 class="offers_card-description">Минимум усилий</h4>
+          <p class="offers_card-text">
+            Произвольный выбор продуктов по Вашему желанию.
+          </p>
+          <p class="offers_card-price">от 700 Р</p>
+          <p class="offers_card-delivery">Стоимость доставки от 200 Р</p>
+          <button class="offers_card-btn">Собрать корзину</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="delivery container">
+      <h3>Доставка готовой еды на неделю</h3>
+      <div class="delivery_cards">
+        <div class="delivery_card">
+          <img
+            class="delivery_card-image"
+            src="img/cards/card1.png"
+            alt="Первая карточка"
+          />
+          <span class="delivery_tag delivery_tag-1">ЗОЖ</span>
+        </div>
+        <div class="delivery_card">
+          <img
+            class="delivery_card-image"
+            src="img/cards/card2.png"
+            alt="Вторая карточка"
+          />
+          <span class="delivery_tag delivery_tag-2">Овощное</span>
+        </div>
+        <div class="delivery_card">
+          <img
+            class="delivery_card-image"
+            src="img/cards/card3.png"
+            alt="Вторая карточка"
+          />
+          <span class="delivery_tag delivery_tag-3">Мясное</span>
+        </div>
+        <div class="delivery_card">
+          <img
+            class="delivery_card-image"
+            src="img/cards/card4.png"
+            alt="Вторая карточка"
+          />
+          <span class="delivery_tag delivery_tag-4">Птица</span>
+        </div>
+        <div class="delivery_card">
+          <img
+            class="delivery_card-image"
+            src="img/cards/card5.png"
+            alt="Вторая карточка"
+          />
+          <span class="delivery_tag delivery_tag-5">Рыбное</span>
+        </div>
+        <div class="delivery_card">
+          <img
+            class="delivery_card-image"
+            src="img/cards/card6.png"
+            alt="Вторая карточка"
+          />
+          <span class="delivery_tag delivery_tag-6">Детское</span>
+        </div>
+        <div class="delivery_card">
+          <img
+            class="delivery_card-image"
+            src="img/cards/card7.png"
+            alt="Вторая карточка"
+          />
+          <span class="delivery_tag delivery_tag-7">Родителям</span>
+        </div>
+        <div class="delivery_card">
+          <img
+            class="delivery_card-image"
+            src="img/cards/card8.png"
+            alt="Вторая карточка"
+          />
+          <span class="delivery_tag delivery_tag-8">Праздничное</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories">
+      <div class="container">
+        <h2>Категории блюд</h2>
+        <ul class="tabs">
+          <li class="tabs_nav" data-tab="#tab_1">Популярные блюда</li>
+          <li class="tabs_nav" data-tab="#tab_2">Овощное</li>
+          <li class="tabs_nav" data-tab="#tab_3">Мясное</li>
+        </ul>
+        <div class="categories_cards tab_item" id="tab_1">
+          <div class="categories_card">
+            <img
+              class="categories_card-image"
+              src="img/categories-card.png"
+              alt="Картинка блюда"
+            />
+            <div class="categories_card-info">
+              <div class="categories_card-content">
+                <h3>Куриные крылья под соусом терияки</h3>
+                <p class="categories_card-text">
+                  Соус Терияки придумали повара из Японии. По традиции его
+                  используют в качестве маринада для...
+                </p>
+              </div>
+              <div class="categories_card-footer">
+                <div class="categories_card-price">
+                  <span>260 Р</span> <br />
+                  500 гр
+                </div>
+                <button class="categories_card-btn">В корзину</button>
+              </div>
+            </div>
+          </div>
+          <div class="categories_card">
+            <img
+              class="categories_card-image categories_card-image_new"
+              src="img/categories-card2.jpg"
+              alt="Картинка блюда"
+            />
+            <div class="categories_card-info">
+              <div class="categories_card-content">
+                <h3>Гамбургер с картошкой фри</h3>
+                <p class="categories_card-text">
+                  Сочнейший и вкуснейший гамбургер с хрустящей картошкой фри.
+                  Соус выбирается исходя из ваших предпочтений, дополнительно
+                  можно добавить перец халапенье
+                </p>
+              </div>
+              <div class="categories_card-footer">
+                <div class="categories_card-price">
+                  <span>320 Р</span> <br />
+                  420 гр
+                </div>
+                <button class="categories_card-btn">В корзину</button>
+              </div>
+            </div>
+          </div>
+          <div class="categories_card">
+            <img
+              class="categories_card-image categories_card-image_new"
+              src="img/categories-card3.jpg"
+              alt="Картинка блюда"
+            />
+            <div class="categories_card-info">
+              <div class="categories_card-content">
+                <h3>Цезарь с креветками</h3>
+                <p class="categories_card-text">
+                  Легкий и пикантный, «Цезарь» никого не оставит равнодушным!
+                  Это произведение кулинарного искусства, полюбившееся всему
+                  миру.
+                </p>
+              </div>
+              <div class="categories_card-footer">
+                <div class="categories_card-price">
+                  <span>340 Р</span> <br />
+                  280 гр
+                </div>
+                <button class="categories_card-btn">В корзину</button>
+              </div>
+            </div>
+          </div>
+          <div class="categories_card">
+            <img
+              class="categories_card-image categories_card-image_new"
+              src="img/categories-card4.jpg"
+              alt="Картинка блюда"
+            />
+            <div class="categories_card-info">
+              <div class="categories_card-content">
+                <h3>Чизкейк "Нью-Йорк"</h3>
+                <p class="categories_card-text">
+                  Это невероятно вкусный десерт, приготовленный из чистого
+                  сливочного сыра, сливок, яиц и сахара, посыпанн крошками
+                  печенья
+                </p>
+              </div>
+              <div class="categories_card-footer">
+                <div class="categories_card-price">
+                  <span>220 Р <br /> </span>
+                  170 гр
+                </div>
+                <button class="categories_card-btn">В корзину</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="categories_cards tab_item" id="tab_2">
+          <div class="categories_card">
+            <img
+              class="categories_card-image categories_card-image_new"
+              src="img/categories2-card1.jpg"
+              alt="Картинка блюда"
+            />
+            <div class="categories_card-info">
+              <div class="categories_card-content">
+                <h3>Овощные котлеты</h3>
+                <p class="categories_card-text">
+                  Прекрасный выбор для любителей овощных меню. Сочетание
+                  брокколи с цветной капустой под острым соусом придает особую
+                  пикантность этому блюду
+                </p>
+              </div>
+              <div class="categories_card-footer">
+                <div class="categories_card-price">
+                  <span>400 Р</span> <br />
+                  350 гр
+                </div>
+                <button class="categories_card-btn">В корзину</button>
+              </div>
+            </div>
+          </div>
+          <div class="categories_card">
+            <img
+              class="categories_card-image categories_card-image_new"
+              src="img/categories2-card2.jpg"
+              alt="Картинка блюда"
+            />
+            <div class="categories_card-info">
+              <div class="categories_card-content">
+                <h3>Запеченные овощи</h3>
+                <p class="categories_card-text">
+                  Запченные овощи всегда являлись одним из самых любимых блюд,
+                  подавыемых на гарнир к мясным блюдам. Особый шарм придаёт
+                  подача овощей с соусом Терияки.
+                </p>
+              </div>
+              <div class="categories_card-footer">
+                <div class="categories_card-price">
+                  <span>280 Р</span> <br />
+                  220 гр
+                </div>
+                <button class="categories_card-btn">В корзину</button>
+              </div>
+            </div>
+          </div>
+          <div class="categories_card">
+            <img
+              class="categories_card-image categories_card-image_new"
+              src="img/categories2-card3.jpg"
+              alt="Картинка блюда"
+            />
+            <div class="categories_card-info">
+              <div class="categories_card-content">
+                <h3>Сырные палочки</h3>
+                <p class="categories_card-text">
+                  Сырные палочки в легкой панировке будут прекрасным дополнением
+                  к любому блюду на вашем столе. Отличное блюдо для закуски.
+                </p>
+              </div>
+              <div class="categories_card-footer">
+                <div class="categories_card-price">
+                  <span>340 Р</span> <br />
+                  250 гр
+                </div>
+                <button class="categories_card-btn">В корзину</button>
+              </div>
+            </div>
+          </div>
+          <div class="categories_card">
+            <img
+              class="categories_card-image categories_card-image_new"
+              src="img/categories2-card4.jpg"
+              alt="Картинка блюда"
+            />
+            <div class="categories_card-info">
+              <div class="categories_card-content">
+                <h3>Фаршированные перцы</h3>
+                <p class="categories_card-text">
+                  Перцы, фаршированные нежной сырной заправкой имеют легкий и
+                  приятный вкус. Свежайшие перцы на вкус просто изумитльны
+                </p>
+              </div>
+              <div class="categories_card-footer">
+                <div class="categories_card-price">
+                  <span>380 Р</span> <br />
+                  370 гр
+                </div>
+                <button class="categories_card-btn">В корзину</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="categories_cards tab_item" id="tab_3">
+          <div class="categories_card">
+            <img
+              class="categories_card-image categories_card-image_new"
+              src="img/categories3_card3.jpg"
+              alt="Картинка блюда"
+            />
+            <div class="categories_card-info">
+              <div class="categories_card-content">
+                <h3>Стейк "Рибай"</h3>
+                <p class="categories_card-text">
+                  Сочнейший и великолепнейший стейк "Рибай" никого не оставит
+                  равнодушным. Степень прожарки выбирается индивидуально.
+                </p>
+              </div>
+              <div class="categories_card-footer">
+                <div class="categories_card-price">
+                  <span>1200 Р</span> <br />
+                  100 гр
+                </div>
+                <button class="categories_card-btn">В корзину</button>
+              </div>
+            </div>
+          </div>
+          <div class="categories_card">
+            <img
+              class="categories_card-image categories_card-image_new"
+              src="img/categories-card2.jpg"
+              alt="Картинка блюда"
+            />
+            <div class="categories_card-info">
+              <div class="categories_card-content">
+                <h3>Гамбургер с картошкой фри</h3>
+                <p class="categories_card-text">
+                  Сочнейший и вкуснейший гамбургер с хрустящей картошкой фри.
+                  Соус выбирается исходя из ваших предпочтений, дополнительно
+                  можно добавить перец халапенье
+                </p>
+              </div>
+              <div class="categories_card-footer">
+                <div class="categories_card-price">
+                  <span>320 Р</span> <br />
+                  420 гр
+                </div>
+                <button class="categories_card-btn">В корзину</button>
+              </div>
+            </div>
+          </div>
+          <div class="categories_card">
+            <img
+              class="categories_card-image"
+              src="img/categories-card.png"
+              alt="Картинка
+            блюда"
+            />
+            <div class="categories_card-info">
+              <div class="categories_card-content">
+                <h3>Куриные крылья под соусом терияки</h3>
+                <p class="categories_card-text">
+                  Соус Терияки придумали повара из Японии. По традиции его
+                  используют в качестве маринада для...
+                </p>
+              </div>
+              <div class="categories_card-footer">
+                <div class="categories_card-price">
+                  <span>770 Р</span> <br />
+                  230 гр
+                </div>
+                <button class="categories_card-btn">В корзину</button>
+              </div>
+            </div>
+          </div>
+          <div class="categories_card">
+            <img
+              class="categories_card-image categories_card-image_new"
+              src="img/categories3_card4.jpg"
+              alt="Картинка блюда"
+            />
+            <div class="categories_card-info">
+              <div class="categories_card-content">
+                <h3>Говядина по-голландски</h3>
+                <p class="categories_card-text">
+                  Экзотическое и очень удивительное на вкус блюдо порадует
+                  многих эстетов, желающих познать что-то новое. Великолепное
+                  сочетание мяса с нотками итальянских трав
+                </p>
+              </div>
+              <div class="categories_card-footer">
+                <div class="categories_card-price">
+                  <span>260 Р</span> <br />
+                  500 гр
+                </div>
+                <button class="categories_card-btn">В корзину</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="button">
+          <button class="more_dishes">Больше блюд</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits container">
+      <h2>Наши преимущества</h2>
+      <div class="benefits_slider">
+        <div class="benefits_slide">
+          <div class="benefits_slide-card">
+            <img
+              class="benefits_slide-image"
+              src="img/benefits_slide1.svg"
+              alt=""
+            />
+            <h3>Какой путь проходит ваша еда</h3>
+            <p>
+              Вы делаете заказ на коробку с недельным запасом полуфабрикатов и
+              готовых блюд для всей семьи
+            </p>
+          </div>
+        </div>
+        <div class="benefits_slide">
+          <div class="benefits_slide-card">
+            <img
+              class="benefits_slide-image"
+              src="img/benefits_slide2.svg"
+              alt=""
+            />
+            <h3>Как происходит производство</h3>
+            <p>
+              За день до доставки мы сами готовим блюда из натуральных продуктов
+              без консервантов, красителей и гмо
+            </p>
+          </div>
+        </div>
+        <div class="benefits_slide">
+          <div class="benefits_slide-card">
+            <img
+              class="benefits_slide-image"
+              src="img/benefits_slide3.svg"
+              alt=""
+            />
+            <h3>Высокие стандарты качества</h3>
+            <p>
+              Наши повара с многолетним опытом с любовью готовят каждую порцию
+              блюда
+            </p>
+          </div>
+        </div>
+        <div class="benefits_slide">
+          <div class="benefits_slide-card">
+            <img
+              class="benefits_slide-image"
+              src="img/benefits_slide4.svg"
+              alt=""
+            />
+            <h3>Быстрая и качественная доставка</h3>
+            <p>
+              Сами доставим всё прямов в вашу морозилку, сохранив температурный
+              режим и качество наших блюд
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer container">
+      <div class="footer_logo">
+        <img src="img/logo.jpg" alt="Логотип" />
+        <p class="header_logo-text">Индекс еда</p>
+      </div>
+      <div class="footer_links">
+        <a href="#" class="footer_link">Доставка и оплата</a>
+        <a href="#" class="footer_link">Напишите нам</a>
+      </div>
+      <div class="footer_social">
+        <div class="footer_social-link">
+          <a class="footer_social-a" href="#"
+            ><img
+              src="img/telegram.svg"
+              alt="telegram"
+              class="footer_social-image"
+          /></a>
+        </div>
+        <div class="footer_social-link">
+          <a class="footer_social-a" href="#"
+            ><img src="img/vk.svg" alt="vk" class="footer_social-image"
+          /></a>
+        </div>
+        <div class="footer_social-link footer_social-link3">
+          <a class="footer_social-a" href="#"
+            ><img
+              src="img/instagram.svg"
+              alt="instagram"
+              class="footer_social-image"
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
